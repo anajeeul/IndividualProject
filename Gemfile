@@ -39,6 +39,11 @@ end
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+# Access bootstrap
+gem 'bootstrap', '~> 5.0.0.alpha3'
+# Access Friendly_id > Offers readable URL for portfolio posts
+gem 'friendly_id', '~> 5.1'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
