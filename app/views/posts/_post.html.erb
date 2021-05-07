@@ -1,0 +1,15 @@
+
+<div class='col-sm-6 col-lg-4'>
+<div class="card" style="width: 20rem;">
+  <div class="card-body">
+  <img class="card-img-top" src="https://i.pinimg.com/280x280_RS/bd/be/16/bdbe1677459a92462e6b5026a0cac58f.jpg" alt="Card image" style="width:100%">
+    <h4 class="card-title"><%= link_to post.title, post %></h4>
+    <p class="card-text"><%= truncate(post.description, length: 40) %></p>
+    <%= link_to 'Read', post, class: 'btn btn-read' %>
+    <% if user_signed_in? %>
+        <%= link_to 'Delete', post, class: 'btn btn-delete', method: :delete, data: {confirm: 'Are you sure?' } %>
+    <% end %>
+    </div>
+    </div>
+</div>
+

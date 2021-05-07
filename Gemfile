@@ -27,6 +27,7 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+
 group :production do
   gem 'pg', '~> 0.21' # for Heroku deployment
   gem 'rails_12factor'
@@ -41,6 +42,10 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 # Access bootstrap
 gem 'bootstrap', '~> 5.0.0.alpha3'
+
+# Access jquery rails for bootstrap
+gem 'jquery-rails'
+
 # Access Friendly_id > Offers readable URL for portfolio posts
 gem 'friendly_id', '~> 5.1'
 
@@ -50,6 +55,10 @@ gem 'simplecov', require: false, group: :test
 # Add mini-racer 
 gem 'mini_racer'
 
+# Add Devise for user authentication
+gem 'devise'
+
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -57,6 +66,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails', '~> 3.7'
   gem 'capybara'
+  gem 'factory_bot_rails'
 end
 
 group :development do

@@ -1,7 +1,9 @@
 
 require 'rails_helper'
 
+
 RSpec.feature "Post", type: :feature do
+  
   context "Create new post" do
     before(:each) do
       visit new_post_path
@@ -9,6 +11,8 @@ RSpec.feature "Post", type: :feature do
         fill_in "Title", with: "Test title"
       end
     end
+
+   
 
     scenario "should be successful" do
       fill_in "Description", with: "Test description"
@@ -55,3 +59,4 @@ RSpec.feature "Post", type: :feature do
     end
   end
 end
+

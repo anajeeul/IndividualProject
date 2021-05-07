@@ -4,6 +4,6 @@ require 'rails_helper'
 RSpec.feature "Visiting the homepage", type: :feature do
   scenario "The visitor should see projects" do
     visit root_path
-    expect(page).to have_text("Posts")
+    expect(page).to have_text("Ahmad's Portfolio")
   end
 end
