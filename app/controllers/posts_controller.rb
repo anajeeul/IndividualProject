@@ -66,6 +66,6 @@ class PostsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def post_params
-      params.require(:post).permit(:title, :body, :description) # Removed :slug so one cannot be given at creation
+      params.require(:post).permit(:title, :body, :description, :thumbnail_image_url) # Removed :slug so one cannot be given at creation
     end
 end
